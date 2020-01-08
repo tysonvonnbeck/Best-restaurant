@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/tysonvonnbeck/Best-restaurant/issues"
   },
-  "homepage": "https://github.com/tysonvonnbeck/Best-restaurant#readme"
+  "homepage": "https://github.com/tysonvonnbeck/Best-restaurant#readme",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
 }
