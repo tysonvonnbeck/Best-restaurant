@@ -66,4 +66,33 @@
 	</div>
 </body>
 
-</html>
+	</div>
+	
+	<script type="text/javascript">
+		
+		  $.get("/api/tables/", function(data) {
+			console.log(data);
+
+			for(i=0; i < data.length; i++) {
+				var j = i+1
+			const html = `<div class="well" id="tableWell-${j}"><h2><span class="label label-primary">${j}</span> | ${data[i].uniqueID}</h2></div>`
+			$("#tableSection").append(html)
+			} 
+		  });
+		  $.get("/api/waitList/", function(data) {
+			console.log(data);
+
+			for(i=0; i < data.length; i++) {
+				var j = i+1
+			const html = `<div class="well" id="tableWell-${j}"><h2><span class="label label-primary">${j}</span> | ${data[i].uniqueID}</h2></div>`
+			$("#waitlistSection").append(html)
+			} 
+		  });
+
+	  </script>
+
+
+
+    </body>
+    </html>
+
